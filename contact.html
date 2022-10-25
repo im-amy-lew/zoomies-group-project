@@ -1,92 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Zoomies Pet Store is dedicated to serving families in the Central Valley whose mission is providing care for our furry pals one paw at a time.">
-        <meta name="keywords" content="pet, shop, furbabies, pets, dog, cat, pet toys, pet food, food, treats, collars, medicine, leashes, animals, animal, care, tlc, care, paw, birds, hamsters, reptiles, reptile, fish">
-        <meta name="author" content="Jacquelyn S.">
-        <title>Zoomies Pet Store | Providing care for our furry pals one paw at a time | Contact Us</title>
-        <!-- GOOGLE FONTS-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
-        <!-- FONT AWESOME -->
-        <script src="https://kit.fontawesome.com/c90a098820.js" crossorigin="anonymous"></script>
-        
-        <!-- CUSTOM STYLES -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/contact.css">
-    </head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Zoomies Pet Store is dedicated to serving families in Pet Valley whose mission is providing care for our furry pals one paw at a time.">
+	<meta name="keywords" content="pet, shop, furbabies, pets, dog, cat, pet toys, pet food, food, treats, collars, medicine, leashes, animals, animal, care, tlc, care, paw, birds, hamsters, reptiles, reptile, fish">
+	<meta name="author" content="Amy L.">
+	<title>Zoomies Pet Store | Providing care for our furry pals one paw at a time | Contact Us</title>
+	<!-- Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Asap|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/c90a098820.js" crossorigin="anonymous"></script>
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+
+
+
+
+
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="float-left remove-overflow">
-                <img src="img/zoomies-pet-shop-logo-2.png" alt="Zoomies Pet Store" class="logo remove-overflow">
-            </a>
-            <ul class="float-left">
-                <li>
-                    <a href="index.html#about">About</a>
-                </li>
-                <li>
-                    <a href="index.html#locations">Locations</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <div class="clearfix"></div>
-        </nav>
-        <h1 class="heading-title w-lg m-auto bg-light text-center">
-          <i class="fa-solid fa-paw"></i>
-          Contact Us 
-          <i class="fa-solid fa-paw"></i>
-        </h1>
-    </header>
-    <main class="container bg-light w-lg m-auto">
-        <div>
-            <form method="" action="">
-                <!-- Name, Email/Phone, message, subject type, and *attachment* -->
-                <div>
-                    <!-- Name -->
-                    <label for="name-input">Name</label>
-                    <input id="name-input" type="text" placeholder="Your name...">
-                </div>
-                
-                <div>
-                    <!-- Email -->
-                    <label for="email-input">Email</label>
-                    <input id="email-input" type="email" placeholder="Your email...">
-                </div>
-                <!-- Phone Number -->
-                <div>
-                    <label for="phone-input"></label>
-                    <input type="tel" id="phone-input" placeholder="Your telephone number...">
-                </div>
-                <!-- Subject Type -->
-                <div>
-                    <label for="subject-input">Subject</label>
-                    <select id="subject-input">
-                        <!-- <option value="subject_questions">Questions</option> -->
-                        <option value="services">Services</option>
-                        <option value="product">Product</option>
-                        <option value="events">Events</option>
-                        <option selected value="questions">Questions</option>
-                        <option value="careers">Career Oppurrtunities</option>
-                    </select>
-                </div>
-                <!-- Message -->
-                <div>
-                    <label for="message-input">Message</label>
-                    <textarea id="message-input" placeholder="Tell us your thoughts..." cols="30" rows="6"></textarea>
-                </div>
-                <button type="submit">Submit <i class="fa-solid fa-paper-plane"></i></button>
-            </form>
+
+  <header>
+
+    <nav>
+      <a href="index.html" class="float-left remove-overflow">
+        <img src="img/zoomies-pet-shop-logo.png" alt="Zoomies Pet Store Home Page" class="logo remove-overflow">
+      </a>
+      <ul class="float-left">
+        <li>
+          <a href="index.html#about" class="rounded-border">About</a>
+        </li>
+        <li>
+          <a href="index.html#shop" class="rounded-border">Shop</a>
+        </li>
+        <li>
+          <a href="index.html#locations" class="rounded-border">Locations</a>
+        </li>
+        <li>
+          <a href="contact.html" class="rounded-border">Contact</a>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </nav>
+
+    <h1 class="heading-title heavy w-lg m-auto bg-light text-center">
+      <i class="fa-solid fa-paw"></i>
+      Zoomies Pet Shop 
+      <i class="fa-solid fa-paw"></i>
+    </h1>
+
+  </header>
+	
+
+
+
+
+	<main class="container bg-light w-lg m-auto">
+
+		<form class="w-md center">
+
+			<!-- Name -->
+			<div>
+				<p><label for="name-input">Name</label></p>
+				<p><input id="name-input" type="text" required class="form-input"></p>
+			</div>
+
+			<!-- Email -->
+			<div>
+				<!-- Email -->
+				<p><label for="email-input">Email</label></p>
+				<p><input id="email-input" type="email" required class="form-input"></p>
+			</div>
+
+			<!-- Phone Number -->
+			<div>
+				<p><label for="phone-input">Phone Number</label></p>
+				<p><input type="tel" id="phone-input" class="form-input"></p>
+			</div>
+
+			<!-- Subject Type -->
+			<div>
+				<p><label for="subject-input">Subject</label></p>
+				<p><select id="subject-input" class="form-input"></p>
+					<option selected value="questions">Questions</option>
+					<option value="services">Services</option>
+					<option value="products">Products</option>
+					<option value="events">Events</option>
+					<option value="careers">Career Oppurrtunities</option>
+				</select>
+			</div>
+
+			<!-- Message -->
+			<div>
+				<p><label for="message-input">Message</label></p>
+				<p><textarea id="message-input" rows="10" class="form-input" required></textarea></p>
+			</div>
+
+			<!-- Submit Button -->
+			<button type="submit" class="form-button rounded-border button">
+				Submit <i class="fa-solid fa-paper-plane"></i>
+			</button>
+
+		</form>
+
+		<!-- Back to top button -->
+		<a href="#top" aria-label="Back to top" class="btn-top text-center rounded-border">
+			<i class="fa-solid fa-chevron-up"></i>
+		</a>
+
+		<div class="clearfix"></div>
+
+	</main>
+
+
+
+
+
+  <footer>
+
+    <div class="text-center w-lg m-auto">
+
+      <!-- Social media links -->
+      <div class="m-top-btm">
+        <a href="#" aria-label="Zoomies Pet Shop Instagram page"><i class="fa-brands fa-square-instagram fa-2x m-right"></i></a>
+        <a href="#" aria-label="Zoomies Pet Shop Facebook page"><i class="fa-brands fa-square-facebook fa-2x m-right"></i></i></a>
+        <a href="#" aria-label="Zoomies Pet Shop Twitter page"><i class="fa-brands fa-square-twitter fa-2x m-right"></i></a>
+      </div>
+
+      <div class="m-top-btm">
+
+        <!-- Contact links -->
+        <div class="float-left w-third">
+          <ul class="no-bullets">
+            <li>
+              <a href="contact.html" class="text-link">Contact Us</a>
+            </li>
+            <li>
+              <a href="mailto:info@zoomiespetshop.com" aria-label="Email Zoomies Corporate Office" class="text-link">info@zoomiespetshop.com</a>
+            </li>
+            <li>
+              <a href="tel:123-456-7000" aria-label="Call Zoomies Corporate Office" class="text-link">(123) 456-7000</a>
+            </li>
+          </ul>
         </div>
-    </main>
-    <footer>
-      <p class="text-center">&copy; Zoomies Pet Shop</p>
-    </footer>
+
+        <!-- Newsletter -->
+        <div class="float-left w-third">
+          <form>
+            <div>
+              <p><label for="newsletter-input-main">Subscribe to our newsletter today!<br>Please sign up by providing your email:</label></p>
+              <p><input id="newsletter-input-main" type="email" class="rounded-border xxsm-pad w-lg" required></p>
+              <p><button type="submit" aria-label="submit email address" class="rounded-border button">Submit</button></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Careers, resources, back to top links -->
+        <div class="float-left w-third">
+          <ul class="no-bullets">
+            <li>
+              <a href="#" class="text-link">Careers</a>
+            </li>
+            <li>
+              <a href="#" class="text-link">Resources</a>
+            </li>
+            <li>
+              <a href="#top" class="text-link">Back to Top</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+		  <p>&copy;2022 Zoomies Pet Shop <i class="fa-solid fa-paw"></i></p>
+			
+    </div>
+  </footer>
+
 </body>
 </html>

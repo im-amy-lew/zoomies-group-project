@@ -11,6 +11,7 @@
   --dark: #011627;
   --accent: #2ec4b6;
   --special: #e71d36;
+  --link: #2059a5;
 
   --xlg-size: 4.5rem;
   --lg-size: 3.125rem;
@@ -28,7 +29,7 @@ body {
 }
 
 p {
-  margin-bottom: var(--xsm-size);
+  margin-bottom: var(--xxsm-size);
   line-height: 125%;
 }
 
@@ -40,6 +41,12 @@ p {
 
 .clearfix {
   clear: both;
+}
+
+.center {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .gap {
@@ -56,15 +63,11 @@ p {
 }
 
 .m-right {
-  margin: var(--xxsm-size);
+  margin-right: var(--xsm-size);
 }
 
 .m-top-btm {
   margin: var(--sm-size) 0;
-}
-
-.m-btm {
-  margin-bottom: var(--sm-size);
 }
 
 .text-center {
@@ -117,6 +120,10 @@ p {
   list-style: none;
 }
 
+.text-link {
+  color: var(--link);
+}
+
 
 /* Borders */
 .rounded-border {
@@ -144,11 +151,12 @@ nav > ul > li > a {
   padding: 0.75rem 1.5rem;
   background-color: var(--light);
   text-decoration: none;
+  color: var(--dark);
 }
 
-nav > ul > li > a:hover {
-  background-color: var(--dark);
-  color: var(--light);
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  background: var(--secondary);
 }
 
 img.logo {
@@ -184,13 +192,6 @@ h3 {
 }
 
 
-/* Locations Section */
-/* .locations-section_container {
-	padding: var--md-size);
-	background-color: var(--secondary);
-} */
-
-
 /* Back to top button */
 .btn-top {
   float: right;
@@ -214,17 +215,34 @@ footer {
   padding: var(--md-size);
 }
 
+.button {
+  font-family: inherit;
+  font-size: 100%;
+  padding: var(--xxsm-size);
+  font-weight: 800;
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--secondary);
+}
+
 .fa-brands {
   color: var(--accent);
 }
 
+.fa-brands:hover,
+.fa-brands:focus,
+.text-link:hover,
+.text-link:focus {
+  color: var(--secondary);
+}
+
+
 /* Page Dividers */
 .section-divider {
   border-top: var(--xxsm-size) solid var(--accent);
-}
-
-.vertical-divider {
-  border-left: var(--xxsm-size) solid var(--accent);
-  height: var(--xlg-size);
-  margin-left: 50%;
 }

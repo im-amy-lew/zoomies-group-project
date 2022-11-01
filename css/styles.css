@@ -89,7 +89,7 @@ p {
 }
 
 .w-third {
-  width: 33.3%
+  width: 33.3%;
 }
 
 .w-md {
@@ -221,7 +221,7 @@ footer {
   padding: var(--xxsm-size);
   font-weight: 800;
   color: var(--dark);
-  border: 2px solid var(--dark);
+  border: 0.125rem solid var(--dark);
   cursor: pointer;
 }
 
@@ -245,4 +245,54 @@ footer {
 /* Page Dividers */
 .section-divider {
   border-top: var(--xxsm-size) solid var(--accent);
+}
+
+
+/* Screen widths up to 425px */
+@media only screen and (max-width: 425px) {
+  img.logo {
+    width: var(--xlg-size);
+  }
+
+  nav {
+    height: 5rem;
+  }
+  
+  nav ul {
+    padding: var(--sm-size);
+  }
+  
+  nav ul > li {
+    margin-right: 0.1rem;
+  }
+  
+  nav > ul > li > a {
+    padding: var(--xsm-size);
+    font-size: var(--sm-size);
+  }
+
+  h1.heading-title {
+    font-size: var(--lg-size);
+  }
+
+  h2.heading-title {
+    font-size: var(--md-size);
+  }
+  
+  h3 {
+    font-size: var(--sm-size);
+  }
+
+  .mob-col {
+    width: 89%;
+  }
+
+  .mob-pad {
+    margin: var(--sm-size) auto;
+  }
+
+  .mob-footer {
+    float: none;
+    width: 100%;
+  }
 }
